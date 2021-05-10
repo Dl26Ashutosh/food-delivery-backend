@@ -1,0 +1,32 @@
+ALL SET UP RULE MENTIONED BELOW-----
+
+1-> for installing node modules type command in terminal (npm install) it will install all required modules to your project.
+2-> doenload mongoDB compass for data storage and connect it just by clicking connect it will connect ton default port.
+3-> for starting server type (nodemon start).
+4-> for inserting table you need to send the body through postman and for route for that is -- http://localhost:3012/Restaurant/create
+    and send body this way->
+                {
+                    "res_name":"Thambi"
+                }
+    It will create table with restaurant name, we need to insert almost 8 restaurant name.
+5-> now we need to add food items to our resturant so we will post our request to -- http://localhost:3012/FoodList/create/id so (id) is here of your restaurant objectId
+    you need to pass it here a parameter and now we will add our body to this route:
+                     {
+                        "food_name": "Burger",
+                        "price":200,
+                        "description": "contains chicken patty and whole wheat bun "
+                     }  
+    above mentioned is a body which you have to send through postman and add aleast 8 food item in each restaurant.
+6-> Now if you want update or delete your food or res then follow these routes->
+                http://localhost:3012/Restaurant/delete/:id
+                http://localhost:3012/Restaurant/update/:id
+                http://localhost:3012/FoodList/delete/:id
+                http://localhost:3012/FoodList/update/:id
+    and pass your id through postman            
+7-> If you want to find your restaurant and food items then follows these routes->
+    http://localhost:3012/Restaurant/find
+    http://localhost:3012/Restaurant/find/FoodLists/id(pass your id of restaurant)
+8-> now we are good to go to make request from client side.
+
+
+NOTE: Make sure check all your data is getting in mongodb database in proper way or not.
