@@ -1,8 +1,8 @@
 ALL SET UP RULE MENTIONED BELOW-----
 
 1-> for installing node modules type command in terminal (npm install) it will install all required modules to your project.
-2-> doenload mongoDB compass for data storage and connect it just by clicking connect it will connect ton default port.
-3-> for starting server type (nodemon start).
+2-> download mongoDB compass for data storage and connect it just by clicking connect it will connect to default port.
+3-> for starting server type (nodemon start) and type ttp://localhost:3012 in browser you will get (OK) so it means server is started.
 4-> for inserting table you need to send the body through postman and for route for that is -- http://localhost:3012/Restaurant/create
     and send body this way->
                 {
